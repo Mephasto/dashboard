@@ -1,0 +1,120 @@
+extends layout
+block main
+	div.row.bottom-space
+		div.col-md-12
+			article.main-text
+				div.space
+					p Servicios de redes 
+						em para infraestructuras 
+						| de misión crítica
+
+	div.row
+		div.col-md-3
+			article.home-pill.red-pill
+				a.icon.glyphicon.glyphicon-globe
+				div
+					h1 Redes de misión crítica
+				p Proveemos asesoramiento , diseño e implementacion sobre redes de misión critica. Contamos con especialistas en soluciones de alta disponibilidad tanto en infraestructura de LAN como de WAN.
+
+		div.col-md-3
+			article.home-pill.green-pill
+				a.icon.glyphicon.glyphicon-earphone
+				div
+					h1 Telefonía VOiP
+				p Soluciones de Telefonia IP , estructuras convergentes e integración de servicios de colaboración y messaging. Alianzas estrategicas con reconocidos vendors en el segmento.
+
+		div.col-md-3
+			article.home-pill.yellow-pill
+				a.icon.glyphicon.glyphicon-eye-close
+				div
+					h1 Seguridad informatica
+				p Contamos con especialistas en Firewalling , Virtual Private Networks y Content Security. Alianzas estrategicas con reconocidos vendors en el segmento.
+
+		div.col-md-3
+			article.home-pill.blue-pill
+				a.icon.glyphicon.glyphicon-briefcase
+				div
+					h1 Soporte 24 x 7
+				p Proveemos servicios de soporte para redes de misión critica con diferentes esquemas de SLA de acuerdo a las necesidades del cliente. Contamos con la estructura necesaria para proveer 7x24 en el área de la Ciudad de Buenos Aires y del Gran Buenos Aires. 
+
+	div.row.bottom-space
+		h1 Nuestros clientes
+		hr
+		div.col-md-12
+			article.clients
+				div.col-md-3(id="cl07")
+				div.col-md-3(id="cl04")
+				div.col-md-3(id="cl05")
+				div.col-md-3(id="cl08")
+		div.col-md-12
+			article.clients
+				div.col-md-3(id="cl09")
+				div.col-md-3(id="cl10")
+				div.col-md-3(id="cl11")
+		//div.col-md-12
+			//article.clients
+				//div.col-md-3(id="cl01")
+				//div.col-md-3(id="cl02")
+				//div.col-md-3(id="cl06")
+				//div.col-md-3(id="cl03")
+
+	div.row.bottom-space
+		div.col-md-8
+			article
+				p.medium-text 
+					em Nuestros clientes 
+					| son empresas corporativas que dependen de su estructura informática para la gestión de sus negocios y habitualmente cuentan con personal interno para la operación diaria de sus sistemas.
+					br
+					br
+					|Las tecnologías de infraestructura hoy son tan sofisticadas y complejas que requieren de 
+					em altos niveles de especialización 
+					| en cada área para poder implementar las mejores soluciones y para resolver en tiempo y forma los problemas que surjan durante la operación.
+		div.col-md-1
+		div.col-md-3
+			article.gray-gradient#carrousel
+				div.brands-carrousel
+					#cisco(title="Cisco")
+					#juniper(title="Juniper")
+					#riverbed(title="Riverbed")
+					#redhat(title="Redhat")
+					#furukawa(title="Furukawa")
+
+	div.row
+		div.col-md-12
+			h1 Nuestras oficinas
+			hr
+	div.row
+		div.col-md-6
+			article#map
+				div(onClick="style.pointerEvents='none'").overlay
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.28784823978!2d-58.37372671612948!3d-34.59722964991851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33535275889c1%3A0xdbaf9a5788b06f6!2sIng+Enrique+Butty+240%2C+C1106+CABA!5e0!3m2!1ses-419!2sar!4v1455654843348" width="555" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		div.col-md-6
+			article.office
+				div#office
+					div#arrow
+					div#contact-info
+						span &nbsp;Buenos Aires - Argentina&nbsp;
+							br
+						span &nbsp;Ing. Butty 240 5to piso&nbsp;
+							br
+						span &nbsp;(+54) 11 4590-2295&nbsp;
+							br
+						span &nbsp;info@itpartner.com.ar&nbsp;
+						div.form
+							form(role="form", data-toggle="validator", id="home-contact-form")
+								div.form-group
+									label(for="input_email") Envíe un mensaje rápido...
+									//label(for="input_email") Email
+									input(type="email", id="input_email", placeholder="Email").form-control
+									label(for="input_mensaje") 
+									//label(for="input_mensaje") Mensaje
+									textarea(type="textarea", id="input_mensaje", placeholder="Mensaje").form-control.textarea
+									div(class="help-block with-errors")
+								div.form-group
+									button(type="submit", class="btn btn-default") Enviar
+
+	div.row
+		div.col-md-12
+			article.goGreen
+				a(href="http://invoiceocean.com/ecoinvoicing?link")
+					img(src="https://s3-eu-west-1.amazonaws.com/fs.siteor.com/radgost/files/eko/green-invoiceocean8.png", alt="Switch to EcoInvoicing, go green and save on every sent invoice")

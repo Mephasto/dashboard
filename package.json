@@ -1,0 +1,23 @@
+{
+  "name": "itpartner",
+  "description": "ITPartner website",
+  "author": "Mephasto <nicdakka@gmail.com>",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "3.3.x",
+    "express": "4.x",
+    "jade": "^1.11.0",
+    "mongoose": "4.1.x",
+    "node-sass": "3.3.x",
+    "mandrill-api": "x"
+  },
+  "devDependencies": {},
+  "engine": "node >= 4.2.x",
+  "subdomain": "mephasto.itpartner",
+  "scripts": {
+    "start": "server.js"
+  },
+  "engines": {
+    "node": "4.2.x"
+  }
+}

@@ -1,0 +1,38 @@
+doctype
+<!--[if IE 8]><html class="lt-ie9 no-js"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+head
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge')
+	title=title
+	meta(name='description', content=description)
+	meta(name='author', content='IT PARTNER SRL')
+	meta(name='viewport', content='width=device-width,initial-scale=1')
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	block css
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/style.css')
+		link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin')
+		link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700')
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+	block top-script
+		//- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+		<!--[if lt IE 9]>
+		script(src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.0/html5shiv.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js")
+		<![endif]-->
+body
+	include header
+
+	.container
+		block main
+
+	include footer
+	block bottom-script
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/holder/2.3.0/holder.js")
+		script(src="js/libs/jquery.krakatoa.min.js")
+		script(src="js/libs/validator.js")
+		script(src="js/scripts.js")
